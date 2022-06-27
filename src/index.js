@@ -1,20 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { HashRouter } from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
-// core styles
-import "./scss/volt.scss";
-
-// vendor styles
-import "react-datetime/css/react-datetime.css";
-
-import HomePage from "./pages/HomePage";
-import ScrollToTop from "./components/ScrollToTop";
+import "./index.css";
+import App from "./App";
+import { ContextProvider } from "./Contexts/ContextProvider";
 
 ReactDOM.render(
-  <HashRouter>
-    <ScrollToTop />
-    <HomePage />
-  </HashRouter>,
+  <ContextProvider>
+    <App />
+  </ContextProvider>,
   document.getElementById("root")
 );

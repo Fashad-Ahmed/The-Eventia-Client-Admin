@@ -1,67 +1,35 @@
 {
-  "name": "@themesberg/volt-react-dashboard",
-  "description": "Volt React Dashboard is a free and open source admin dashboard template powered by React.js and Bootstrap 5",
-  "author": "Themesberg",
-  "keywords": [
-    "bootstrap 5",
-    "react",
-    "react dashboard",
-    "react admin template",
-    "free react",
-    "react ui library",
-    "react bootstrap 5",
-    "bootstrap 5 dashboard",
-    "themesberg"
-  ],
-  "license": "MIT",
-  "homepage": "https://demo.themesberg.com/volt-react-dashboard",
-  "bugs": {
-    "url": "https://github.com/themesberg/volt-react-dashboard/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/themesberg/volt-react-dashboard"
-  },
-  "version": "1.0.1",
+  "name": "project_syncfusion_dashboard",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.17",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@themesberg/react-bootstrap": "^1.4.1",
-    "bootstrap": "5.0.0-beta1",
-    "chartist": "^0.11.4",
-    "chartist-plugin-tooltips-updated": "^0.1.4",
-    "moment-timezone": "^0.5.31",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-chartist": "^0.14.4",
-    "react-copy-to-clipboard": "^5.0.3",
-    "react-datetime": "^3.0.4",
-    "react-dom": "^16.13.1",
-    "react-github-btn": "^1.2.0",
-    "react-live": "^2.2.3",
-    "react-router-dom": "^5.2.0",
-    "react-router-hash-link": "^2.3.1",
-    "react-scripts": "3.4.3",
-    "react-transition-group": "^4.4.1",
-    "simplebar-react": "^2.3.0"
+    "@syncfusion/ej2": "^19.4.48",
+    "@syncfusion/ej2-react-calendars": "^19.4.48",
+    "@syncfusion/ej2-react-charts": "^19.4.50",
+    "@syncfusion/ej2-react-dropdowns": "^19.4.52",
+    "@syncfusion/ej2-react-grids": "^19.4.50",
+    "@syncfusion/ej2-react-inputs": "^19.4.52",
+    "@syncfusion/ej2-react-kanban": "^19.4.48",
+    "@syncfusion/ej2-react-popups": "^19.4.52",
+    "@syncfusion/ej2-react-richtexteditor": "^19.4.50",
+    "@syncfusion/ej2-react-schedule": "^19.4.50",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-local": "PUBLIC_URL=./ react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -74,5 +42,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.19"
   }
 }
