@@ -1,0 +1,53 @@
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+.bg-primary {
+    --cui-bg-opacity: 1;
+    background-color: #243246 !important;
+}
+
+/* .bg-light {
+    --cui-bg-opacity: 1;
+    background-color: rgba(var(--cui-light-rgb), var(--cui-bg-opacity)) !important;
+    background: url('./sl.png');
+    background-repeat: repeat-x;
+    animation: animatedBackground 12s linear infinite alternate;
+    height: 100%;
+} 
+*/
+
+.btn-primary {
+    --cui-btn-bg: #3b8e9e;
+    --cui-btn-border-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-hover-bg: #70cac5;
+    --cui-btn-hover-border-color: #70cac5;
+    --cui-btn-hover-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-active-bg: #70cac5;
+    --cui-btn-active-border-color: #3b8e9e;
+    --cui-btn-active-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-disabled-bg: #3b8e9e;
+    --cui-btn-disabled-border-color: #3b8e9e;
+    --cui-btn-disabled-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-shadow: #3b8e9e;
+}
+
+.btn-link {
+    color: #3b8e9e;
+    text-decoration: underline;
+}
+
+.btn-link:hover {
+    color: #70cac5;
+    text-decoration: underline;
+}
+
+.bg-primary {
+    --cui-bg-opacity: 1;
+    background-color: #3b8e9e !important;
+}

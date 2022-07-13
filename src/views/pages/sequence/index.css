@@ -1,0 +1,45 @@
+.btn-outline-primary {
+    --cui-btn-bg: #3b8e9e;
+    --cui-btn-border-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-hover-bg: #70cac5;
+    --cui-btn-hover-border-color: #70cac5;
+    --cui-btn-hover-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-active-bg: #70cac5;
+    --cui-btn-active-border-color: #3b8e9e;
+    --cui-btn-active-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-disabled-bg: #3b8e9e;
+    --cui-btn-disabled-border-color: #3b8e9e;
+    --cui-btn-disabled-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-shadow: #3b8e9e;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fafafb;
+    background-clip: border-box;
+    border: 1px solid var(--cui-card-border-color, rgba(0, 0, 21, 0.125));
+    border-radius: 0.25rem;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fafafb;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: var(--cui-btn-bg, transparent);
+    border: 1px solid var(--cui-btn-border-color, transparent);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

@@ -1,0 +1,21 @@
+.header .container:first-child, .header .container-fluid:first-child, .header .container-sm:first-child, .header .container-md:first-child, .header .container-lg:first-child, .header .container-xl:first-child, .header .container-xxl:first-child {
+    min-height: 3rem;
+    background-color: #fafafb;
+}
+
+.header.header-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1029;
+    background-color: #fafafb;
+}
+
+a {
+    color: #ed9c8e;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #e2ac90;
+    text-decoration: underline;
+}

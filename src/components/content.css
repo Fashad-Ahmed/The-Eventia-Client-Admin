@@ -1,0 +1,36 @@
+.bg-light {
+    --cui-bg-opacity: 1;
+    /* background-color: rgba(var(--cui-light-rgb), var(--cui-bg-opacity)) !important; */
+    /* background-color: #e2ac90 !important; */
+/* 
+    background: #3A1C71;  
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  */
+
+    background: #DBE6F6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C5796D, #DBE6F6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    background-color: #fafafb;
+    color: #323236;
+}
+
+.btn-primary {
+    --cui-btn-bg: #3b8e9e;
+    --cui-btn-border-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-hover-bg: #70cac5;
+    --cui-btn-hover-border-color: #70cac5;
+    --cui-btn-hover-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-active-bg: #70cac5;
+    --cui-btn-active-border-color: #3b8e9e;
+    --cui-btn-active-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-disabled-bg: #3b8e9e;
+    --cui-btn-disabled-border-color: #3b8e9e;
+    --cui-btn-disabled-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-shadow: #3b8e9e;
+}
