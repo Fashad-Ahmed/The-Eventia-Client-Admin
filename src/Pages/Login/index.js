@@ -4,13 +4,20 @@ import TextField from "@mui/material/TextField";
 import { SERVER_URL } from "../../constants";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { useStateContext } from "../../Contexts/ContextProvider";
 import "react-toastify/dist/ReactToastify.css";
 import "./Login.css";
 
 const Login = () => {
+  const { setUserMode } = useStateContext();
   let navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  // const [loading, setLoading] = useState(false);
+
+  const handleLoading = () => {
+    setUserMode();
+  };
 
   const handleSubmit = async () => {
     const user = {
@@ -28,6 +35,7 @@ const Login = () => {
         .then((response) => response.json())
         .then((res) => {
           localStorage.setItem("token", res.userExist._id);
+          handleLoading();
           navigate("/ecommerce");
         });
     } catch (err) {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsCurrencyDollar } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { IoIosMore } from 'react-icons/io';
@@ -16,7 +16,7 @@ const DropDown = ({ currentMode }) => (
 );
 
 const Ecommerce = () => {
-  const { currentColor, currentMode } = useStateContext();
+  const { currentColor, currentMode, setUserMode } = useStateContext();
 
   return (
     <div className="mt-24">
