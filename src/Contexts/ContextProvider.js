@@ -28,6 +28,10 @@ export const ContextProvider = ({ children }) => {
     setCurrentUser(true);
   };
 
+  const setUserModeTwo = (e) => {
+    setCurrentUser(false);
+  };
+
   const setColor = (color) => {
     setCurrentColor(color);
     localStorage.setItem("colorMode", color);
@@ -59,6 +63,7 @@ export const ContextProvider = ({ children }) => {
         themeSettings,
         setThemeSettings,
         setCurrentUser,
+        setUserModeTwo,
       }}
     >
       {children}

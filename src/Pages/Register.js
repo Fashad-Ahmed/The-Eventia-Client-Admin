@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Grid, Paper, Button, Typography } from "@material-ui/core";
 import TextField from "@mui/material/TextField";
 import Box from "@material-ui/core/Box";
-import { SERVER_URL } from "../../../constants";
+import { SERVER_URL } from "../constants/index";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./Login/Login.css";
 
 const Register = () => {
   let navigate = useNavigate();
@@ -29,6 +30,7 @@ const Register = () => {
       userName: username,
       email,
       password,
+      admin: false,
     };
     console.log(user);
     try {
@@ -43,7 +45,7 @@ const Register = () => {
         .catch(() => {
           console.log("Unable to add  user");
         });
-      navigate("/login");
+      navigate("/");
     } catch (err) {
       toast.error("User Not Registered", {
         position: "bottom-center",
@@ -112,7 +114,7 @@ const Register = () => {
         >
           Sign up
         </Button>
-        <Link to="/login">
+        <Link to="/">
           <Typography
             variant="caption"
             style={{ color: "blue", marginTop: "10px" }}

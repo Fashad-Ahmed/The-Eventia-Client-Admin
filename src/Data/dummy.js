@@ -508,14 +508,14 @@ export const links = [
         name: 'kanban',
         icon: <BsKanban />,
       },
-      {
-        name: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
+      // {
+      //   name: 'editor',
+      //   icon: <FiEdit />,
+      // },
+      // {
+      //   name: 'color-picker',
+      //   icon: <BiColorFill />,
+      // },
     ],
   },
   {
@@ -546,10 +546,10 @@ export const links = [
         name: 'color-mapping',
         icon: <BsBarChart />,
       },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
+      // {
+      //   name: 'pyramid',
+      //   icon: <GiLouvrePyramid />,
+      // },
       {
         name: 'stacked',
         icon: <AiOutlineBarChart />,
@@ -3095,7 +3095,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Cooperative',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3103,7 +3103,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Birthday',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3111,7 +3111,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'Wedding',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },

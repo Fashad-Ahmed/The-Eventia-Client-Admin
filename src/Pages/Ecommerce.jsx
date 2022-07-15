@@ -35,14 +35,14 @@ const Ecommerce = () => {
               <BsCurrencyDollar />
             </button>
           </div>
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <Button
               color="white"
               bgColor={currentColor}
               text="Download"
               borderRadius="10px"
             />
-          </div>
+          </div> */}
         </div>
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
           {earningData.map((item) => (
@@ -241,7 +241,7 @@ const Ecommerce = () => {
         </div>
         <div className="w-400 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl p-6 m-3">
           <div className="flex justify-between">
-            <p className="text-xl font-semibold">MedicalPro Branding</p>
+            <p className="text-xl font-semibold">Pro Branding</p>
             <button type="button" className="text-xl font-semibold text-gray-400">
               <IoIosMore />
             </button>
@@ -308,7 +308,7 @@ const Ecommerce = () => {
               alt=""
             />
             <div className="mt-8">
-              <p className="font-semibold text-lg">React 18 coming soon!</p>
+              <p className="font-semibold text-lg">Wedding style 18 coming soon!</p>
               <p className="text-gray-400 ">By Johnathan Doe</p>
               <p className="mt-8 text-sm text-gray-400">
                 This will be the small description for the news you have shown
