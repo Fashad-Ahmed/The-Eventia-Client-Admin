@@ -24,6 +24,13 @@ import {
 import { useStateContext } from "./Contexts/ContextProvider";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import Admin from "./Pages/Admin/Admin";
+import Location from "./Pages/Location/Location";
+import Event from "./Pages/Event/Event";
+import User from "./Pages/User/User";
+import Payment from "./Pages/Payment/Payment";
+import Vendor from "./Pages/Vendor/Vendor";
+
 import "./App.css";
 
 const App = () => {
@@ -96,6 +103,12 @@ const App = () => {
 
                     {/* dashboard  */}
                     <Route path="/ecommerce" element={<Ecommerce />} />
+                    <Route path="/admin" element={<Admin />} />
+                    <Route path="/location" element={<Location />} />
+                    <Route path="/event" element={<Event />} />
+                    <Route path="/user" element={<User />} />
+                    <Route path="/payment" element={<Payment />} />
+                    <Route path="/vendor" element={<Vendor />} />
 
                     {/* pages  */}
                     <Route path="/orders" element={<Orders />} />

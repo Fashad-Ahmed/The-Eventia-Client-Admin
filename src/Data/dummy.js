@@ -477,6 +477,30 @@ export const links = [
         name: 'ecommerce',
         icon: <FiShoppingBag />,
       },
+      {
+        name: 'admin',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'user',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'event',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'vendor',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'location',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'payment',
+        icon: <FiShoppingBag />,
+      },
     ],
   },
 
