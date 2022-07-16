@@ -5,6 +5,7 @@ import { BsChatLeft } from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import { useNavigate, Link } from "react-router-dom";
 
 import avatar from '../Data/avatar.jpg';
 import { Cart, Chat, Notification, UserProfile } from '.';
@@ -28,7 +29,9 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { currentColor, activeMenu, setActiveMenu, handleClick, isClicked, setScreenSize, screenSize } = useStateContext();
+  let navigate = useNavigate();
+
+  const { currentColor, activeMenu, setUserModeTwo, setActiveMenu, handleClick, isClicked, setScreenSize, screenSize } = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -49,13 +52,18 @@ const Navbar = () => {
   }, [screenSize]);
 
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
-
+  const handleLog = () => {
+      // localStorage.clear();
+      // setUserModeTwo();
+      // navigate('/register');
+  }
   return (
     <div className="flex justify-between p-2 md:ml-6 md:mr-6 relative">
 
       <NavButton title="Menu" customFunc={handleActiveMenu} color={currentColor} icon={<AiOutlineMenu />} />
       <div className="flex">
-        <NavButton title="Cart" customFunc={() => handleClick('cart')} color={currentColor} icon={<FiShoppingCart />} />
+        {/* <NavButton title="Cart" customFunc={() => handleClick('cart')} color={currentColor} icon={<FiShoppingCart />} /> */}
+        <NavButton title="Logout" customFunc={handleLog()} color={currentColor} icon={<MdKeyboardArrowDown />} />
         <NavButton title="Chat" dotColor="#03C9D7" customFunc={() => handleClick('chat')} color={currentColor} icon={<BsChatLeft />} />
         <NavButton title="Notification" dotColor="rgb(254, 201, 15)" customFunc={() => handleClick('notification')} color={currentColor} icon={<RiNotification3Line />} />
         <TooltipComponent content="Profile" position="BottomCenter">
@@ -71,7 +79,7 @@ const Navbar = () => {
             <p>
               <span className="text-gray-400 text-14">Hi,</span>{' '}
               <span className="text-gray-400 font-bold ml-1 text-14">
-                Admin Wanna Logout?
+                Admin
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />

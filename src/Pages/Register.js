@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Grid, Paper, Button, Typography } from "@material-ui/core";
 import TextField from "@mui/material/TextField";
 import Box from "@material-ui/core/Box";
@@ -30,11 +30,11 @@ const Register = () => {
       userName: username,
       email,
       password,
-      admin: false,
+      adminStatus: true,
     };
     console.log(user);
     try {
-      fetch(SERVER_URL + "/auth/signup", {
+      fetch(SERVER_URL + "/admin/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
@@ -58,6 +58,10 @@ const Register = () => {
       });
     }
   };
+
+  useEffect(() => {
+    localStorage.clear();
+  }, []);
 
   return (
     <Grid>

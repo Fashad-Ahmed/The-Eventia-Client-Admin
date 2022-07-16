@@ -24,7 +24,7 @@ const Login = () => {
     const user = {
       email,
       password,
-      admin: false,
+      adminStatus: true,
     };
 
     const requestOptions = {
@@ -33,7 +33,7 @@ const Login = () => {
       body: JSON.stringify(user),
     };
     try {
-      await fetch(SERVER_URL + "/auth/signin", requestOptions)
+      await fetch(SERVER_URL + "/admin/signin", requestOptions)
         .then((response) => response.json())
         .then((res) => {
       localStorage.setItem("token", res.userExist._id);

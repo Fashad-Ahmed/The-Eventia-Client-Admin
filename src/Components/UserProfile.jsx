@@ -1,21 +1,18 @@
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
-import { useNavigate, Link } from "react-router-dom";
-import Button from '@mui/material/Button';
 
-// import { Button } from '.';
+import { Button } from '.';
 import { userProfileData } from '../Data/dummy';
 import { useStateContext } from '../Contexts/ContextProvider';
 import avatar from '../Data/avatar.jpg';
 
 const UserProfile = () => {
-  let navigate = useNavigate();
   const { currentColor, setUserModeTwo } = useStateContext();
-  const setUserMode = () => {
-    localStorage.clear();  
-    setUserModeTwo();
-    navigate('/register');
-  }
+  // const setUserMode = () => {
+  //   localStorage.clear();  
+  //   setUserModeTwo();
+  //   navigate('/register');
+  // }
   return (
     <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96">
       <div className="flex justify-between items-center">
@@ -58,19 +55,14 @@ const UserProfile = () => {
         ))}
       </div>
       <div className="mt-5">
-        {/* <Button
+        <Button
           color="white"
           bgColor={currentColor}
           text="Logout"
           borderRadius="10px"
           width="full"
-          onClick={() => {
-            localStorage.removeItem('token');
-            setUserMode();
-            navigate('/register')
-          }}
-        /> */}
-              <btn variant="outlined" onClick={setUserMode()}>Logout</btn>
+        />
+              {/* <btn variant="outlined" onClick={setUserMode()}>Logout</btn> */}
 
       </div>
     </div>

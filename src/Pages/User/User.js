@@ -27,10 +27,6 @@ const User = () => {
     console.log(value);
     console.log(tableMeta);
     console.log(updateValue);
-
-    // apply delete on data
-    // const newData = data.filter((item) => item._id !== value);
-    // setData(newData);
     const requestOptions = {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
