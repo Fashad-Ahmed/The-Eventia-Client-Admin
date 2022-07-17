@@ -4,26 +4,35 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { SERVER_URL } from "../../constants";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+import axios from "axios";
 
 const Location = () => {
   const [data, setData] = useState([]);
-
   const fetchData = async () => {
-    const requestOptions = {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    };
     try {
-      await fetch(SERVER_URL + "/location/fetchLocation", requestOptions)
-        .then((response) => response.json())
-        .then((res) => {
-          console.log(res.newLocation);
-          setData(res.newLocation);
-        });
+      axios.get(SERVER_URL + "/location/fetchLocation").then((res) => {
+        console.log(res.data);
+        setData(res.data);
+      });
     } catch (err) {
       console.log(err);
     }
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        axios.get(SERVER_URL + "/location/fetchLocation").then((res) => {
+          console.log(res.data);
+          setData(res.data);
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const handleDelete = (value, tableMeta, updateValue) => {
     console.log(value);
@@ -79,10 +88,6 @@ const Location = () => {
     fixedHeader: true,
   };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   return (
     <div>
       <div>
@@ -92,7 +97,7 @@ const Location = () => {
       </div>
       <div>
         <MUIDataTable
-          title="Event List"
+          title="Location List"
           data={data}
           columns={columns}
           options={options}

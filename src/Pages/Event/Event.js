@@ -4,29 +4,17 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { SERVER_URL } from "../../constants";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+import axios from "axios";
 
 const Event = () => {
-  const [data, setData] = useState([
-    ["1", "Shadiyana", "Eastern wedding", "Wedding", "500000"],
-    ["2", "Shadiyana", "Eastern wedding", "Wedding", "500000"],
-    ["3", "Shadiyana", "Eastern wedding", "Wedding", "500000"],
-    ["4", "Shadiyana", "Eastern wedding", "Wedding", "500000"],
-    ["5", "Shadiyana", "party", "Birthday", "500000"],
-    ["6", "Shadiyana", "party", "Birthday", "500000"],
-  ]);
+  const [data, setData] = useState();
 
   const fetchData = async () => {
-    const requestOptions = {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    };
     try {
-      await fetch(SERVER_URL + "/event/fetchEvent", requestOptions)
-        .then((response) => response.json())
-        .then((res) => {
-          console.log(res);
-          // setData(res);
-        });
+      axios.get(SERVER_URL + "/event/fetchEvent").then((res) => {
+        console.log(res.data);
+        setData(res.data);
+      });
     } catch (err) {
       console.log(err);
     }
@@ -49,7 +37,7 @@ const Event = () => {
       .then((response) => response.json())
       .then((res) => {
         console.log(res);
-        // fetchData();
+        fetchData();
       })
       .catch((err) => {
         console.log(err);
@@ -94,7 +82,7 @@ const Event = () => {
 
   useEffect(() => {
     console.log("Fetch Data");
-    // fetchData();
+    fetchData();
   }, []);
 
   return (
