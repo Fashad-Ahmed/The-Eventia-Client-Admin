@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MUIDataTable from "mui-datatables";
 import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 import { SERVER_URL } from "../../constants";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
@@ -70,6 +71,21 @@ const Vendor = () => {
             <button onClick={() => handleDelete(value, tableMeta, updateValue)}>
               <DeleteIcon />
             </button>
+          );
+        },
+      },
+    },
+    {
+      name: "Edit",
+      options: {
+        filter: true,
+        sort: false,
+        empty: true,
+        customBodyRender: (value, tableMeta, updateValue) => {
+          return (
+            <Link to={"/vendor/edit/" + tableMeta.rowData[0]}>
+              <EditIcon />
+            </Link>
           );
         },
       },

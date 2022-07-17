@@ -34,6 +34,7 @@ import Vendor from "./Pages/Vendor/Vendor";
 import AddEvent from "./Pages/Event/add";
 import AddLocation from "./Pages/Location/add";
 import AddVendor from "./Pages/Vendor/add";
+import UpdateVendor from "./Pages/Vendor/update";
 
 import "./App.css";
 
@@ -117,7 +118,7 @@ const App = () => {
                     <Route path="/event/create" element={<AddEvent />} />
                     <Route path="/location/create" element={<AddLocation />} />
                     <Route path="/vendor/create" element={<AddVendor />} />
-
+                    <Route path="/vendor/edit" element={<UpdateVendor />} />
                     {/* pages  */}
                     <Route path="/orders" element={<Orders />} />
                     <Route path="/employees" element={<Employees />} />
