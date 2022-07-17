@@ -31,6 +31,9 @@ import User from "./Pages/User/User";
 import Payment from "./Pages/Payment/Payment";
 import Vendor from "./Pages/Vendor/Vendor";
 
+import AddEvent from "./Pages/Event/add";
+import AddLocation from "./Pages/Location/add";
+
 import "./App.css";
 
 const App = () => {
@@ -110,6 +113,9 @@ const App = () => {
                     <Route path="/payment" element={<Payment />} />
                     <Route path="/vendor" element={<Vendor />} />
 
+                    <Route path="/event/create" element={<AddEvent />} />
+                    <Route path="/location/create" element={<AddLocation />} />
+                    
                     {/* pages  */}
                     <Route path="/orders" element={<Orders />} />
                     <Route path="/employees" element={<Employees />} />

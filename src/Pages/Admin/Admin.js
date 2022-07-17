@@ -81,7 +81,7 @@ const Admin = () => {
   return (
     <div>
       <MUIDataTable
-        title="Admin"
+        title="Admin List"
         data={data}
         columns={columns}
         options={options}
