@@ -1,16 +1,16 @@
 # Admin-Dashboard Front End clone made with React JS
-H! This a Admin-Dashboard front end clone that i´ve built using ReactJS.  
+<center>
+![logo](https://user-images.githubusercontent.com/64021315/180723064-c38d12bc-b848-4db4-b8bd-e07c13d97fb5.PNG) 
+ </center>
 
 ![dashboard](https://user-images.githubusercontent.com/97960285/173236612-ef63c5d8-173b-4f7d-a345-6d82bac560ec.jpg)
 
-  ![Capture](https://user-images.githubusercontent.com/64021315/180723048-054bffa3-d38e-4810-98a8-7aab06cae837.PNG)
-![cards](https://user-images.githubusercontent.com/64021315/180723053-ac6831ab-38ec-4a01-b307-31f349a4d4d0.PNG)
-![layout](https://user-images.githubusercontent.com/64021315/180723061-af18bcbe-92e6-4f00-9c36-0679296fb21f.PNG)
-![logo](https://user-images.githubusercontent.com/64021315/180723064-c38d12bc-b848-4db4-b8bd-e07c13d97fb5.PNG)
-![merchandise](https://user-images.githubusercontent.com/64021315/180723067-6b8d18bc-7ab0-4f64-885d-973cd2b05840.PNG)
-![mycard](https://user-images.githubusercontent.com/64021315/180723070-22721b37-af59-423c-af72-36a685cff425.PNG)
-![social](https://user-images.githubusercontent.com/64021315/180723072-7aab9100-75d0-435a-8f05-29650dbed139.PNG)
-![buisness_card](https://user-images.githubusercontent.com/64021315/180723077-49b15b09-7324-4f52-b4db-c30484d47f9a.PNG)
+  ![Capture](https://user-images.githubusercontent.com/64021315/180723048-054bffa3-d38e-4810-98a8-7aab06cae837.PNG) <br></br>
+![layout](https://user-images.githubusercontent.com/64021315/180723061-af18bcbe-92e6-4f00-9c36-0679296fb21f.PNG) <br></br>
+![mycard](https://user-images.githubusercontent.com/64021315/180723070-22721b37-af59-423c-af72-36a685cff425.PNG) <br></br>
+![merchandise](https://user-images.githubusercontent.com/64021315/180723067-6b8d18bc-7ab0-4f64-885d-973cd2b05840.PNG) <br></br>
+![social](https://user-images.githubusercontent.com/64021315/180723072-7aab9100-75d0-435a-8f05-29650dbed139.PNG) <br></br>
+![buisness_card](https://user-images.githubusercontent.com/64021315/180723077-49b15b09-7324-4f52-b4db-c30484d47f9a.PNG) <br></br>
 
 
 # Getting Started with Create React App
