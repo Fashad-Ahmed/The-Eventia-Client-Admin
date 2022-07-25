@@ -1,11 +1,8 @@
 # Admin-Dashboard Front End clone made with React JS
-<center>
+
 ![logo](https://user-images.githubusercontent.com/64021315/180723064-c38d12bc-b848-4db4-b8bd-e07c13d97fb5.PNG) 
- </center>
-
-![dashboard](https://user-images.githubusercontent.com/97960285/173236612-ef63c5d8-173b-4f7d-a345-6d82bac560ec.jpg)
-
-  ![Capture](https://user-images.githubusercontent.com/64021315/180723048-054bffa3-d38e-4810-98a8-7aab06cae837.PNG) <br></br>
+ 
+ <br></br>
 ![layout](https://user-images.githubusercontent.com/64021315/180723061-af18bcbe-92e6-4f00-9c36-0679296fb21f.PNG) <br></br>
 ![mycard](https://user-images.githubusercontent.com/64021315/180723070-22721b37-af59-423c-af72-36a685cff425.PNG) <br></br>
 ![merchandise](https://user-images.githubusercontent.com/64021315/180723067-6b8d18bc-7ab0-4f64-885d-973cd2b05840.PNG) <br></br>
